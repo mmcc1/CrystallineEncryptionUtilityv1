@@ -11,5 +11,5 @@ Win10 security can block the files.  After downloading the zip archive, right-cl
 Analysis of the Output without any compression:
 
 <p align="center">
-  <img src="https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/output.tif" title="Analysis">
+  <img src="https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/K1nNcoM.png" title="Analysis">
 </p>
