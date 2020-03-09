@@ -10,4 +10,4 @@ Win10 security can block the files.  After downloading the zip archive, right-cl
 
 Analysis of the Output without any compression:
 
-!(https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/output.tif)
+![Analysis](https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/output.tif)
