@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Crystalline Encryption Utility v1.0</h1>
+    <h2>Background</h2>
+    <p>Crystalline is an information theoretically secure cipher designed to arrest cryptanalysis either by conventional means or quantum computer.</p>
+    <p>Rather than hard to solve mathematical problems, Crystalline makes use of random reorganisation of bits and bytes.  Its a bit like walking into a room and randomly throwing the contents around then asking someone, with no knowledge of the original positions, to restore the room's contents to originl place.</p>
+    <h2>Instructions</h2>
+    <p>1. Create a folder to hold the contents to be encrypted.</p>
+    <p>2. Create 2 folders under this, 'source' and 'destination'.</p>
+    <p>3. Zip the file(s) you wish to encrypt and place that into the 'source' folder.</p>
+    <p>4. Either generate Keys/Salts or supply your own.  These must be placed together inside a folder with sub-folders 'Keys' and 'Salts'.</p>
+    <p>5. Start Crystalline Encryption Utility.</p>
+    <p>6. Select the 'Folder' menu item then select 'Source'.  A folder selection dialog will appear, select the 'source' folder you created earlier.  The file should appear on the lefthand list view.</p>
+    <p>7. Select the 'Folder' menu item then select 'destination'.  A folder selection dialog will appear, select the 'destination' folder you created earlier.  There should be no change to the righthand list view unless a file was previously encrypted.</p>
+    <p>8. Select the 'Manage' menu item then select 'Keys/Salts'.  A folder selection dialog will appear, select the folder containing the 'Keys' and 'Salts' folder.  The folder path should appear on the label near the bottom left.</p>
+    <p>9. Select the file to be Encrypted.  Click Encrypt.</p>
+    <p>10. The program will look as though it has frozen with the Encrypt button highlighted.  It is not, its just single-threaded and that impacts the UI.  Wait for encryption to complete and the app will respond again.</p>
+    <p>11. Decryption is similar, just supply the correct keys/salts and selected the encrpted file and press decrypt.</p>
+    <h2>Important Notes</h2>
+    <p>1. Always use a new folder structure and Keys/Salts for each file.  File names and extensions are not preserved, please remember them somehow.</p>
+    <p>2. Always delete originals and use a secure wipe utility such as 'Erasure' ensure cluster tips are cleaned.</p>
+    <p>3. Commercial hardware and software have many sidechannel attack vectors, this will not protect you from major governments unless you have covered every side channel.  It will defend against other branches of law enforcement.</p>
+    <p>4. Always use an air-gapped machine to encrypt/decrypt.  Key/Salts should be kept on portable equipment and split up.</p>
+    <h2>FAQ</h2>
+    <p>Q. Its so slow.</p>
+    <p>A. You wanted secure.  Besides, its probably shorter than the prison sentence.</p>
+    <br />
+    <p>Q. Why so many Keys/Salts and why so huge?</p>
+    <p>A. This creates layers and layers of information loss which is impractical to attack.</p>
+    <br />
+    <p>Q. Is the RNG safe?</p>
+    <p>A. You can't trust anything these days.  Especially, RNGs of any form.  Try dice, roulette wheels, etc.  If its digital or powered in some form, it can't be trusted.</p>
+</body>
+</html>
