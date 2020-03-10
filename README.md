@@ -8,8 +8,40 @@ More instructions in the help file included.
 
 Win10 security can block the files.  After downloading the zip archive, right-click and tick the 'Unblock' box.
 
-Analysis of the Output without any compression:
+2D Analysis (no compression):
 
 <p align="center">
-  <img src="https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/K1nNcoM.png" title="Analysis">
+  <img src="https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/K1nNcoM.png" title="2D Analysis">
 </p>
+
+3D Analysis  (no compression):
+
+<p align="center">
+  <img src="https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/3DAnalysis.png" title="3D Analysis">
+</p>
+https://github.com/mmcc1/CrystallineEncryptionUtilityv1/blob/master/3DAnalysis.png
+
+R Code
+
+3D Analysis
+
+wh <- c(464, 464) #Change to the nearest square of file size
+v <- readBin("0.cle", what = "integer", n = prod(wh), size = 1, signed = FALSE, endian = "little")
+
+x <- 1:464 
+y <- 1:464
+z <- v[1:215296] #Change to whatever the square of wh[1] is.
+
+open3d()
+rgl.surface(x, y, z, col="skyblue")
+
+
+2D Analysis
+
+wh <- c(464, 464) #Change to the nearest square of file size
+v <- readBin("0.cle", what = "integer", n = prod(wh), size = 1, signed = FALSE, endian = "little")
+
+tiff("output.tif", width=wh[1], height=wh[2])
+par(c(0,0,0,0))
+image(matrix(v, wh[1], wh[2])[wh[1]:1,], useRaster = TRUE, col = grey.colors(256))
+dev.off()
